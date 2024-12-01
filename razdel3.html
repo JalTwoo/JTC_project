@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Электронное приложение</title>
+    <meta charset="UTF-8"> <!-- Кодировка -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="r3.css">
+</head>
+<body>
+
+<a href="soderzh.html"><button id="back" class="back">←</button></a>
+<a href="index.html"><button id="home" class="home">⌂</button></a>
+<a href=""><button class="test" id="test">тест</button></a>
+
+<button class="b1" onclick="openVideo('стрельба.mp4')">читать</button>
+<button class="b2" onclick="readFile('weaponOwner.pdf')">смотреть</button>
+<button class="b3" onclick="openVideo('')">читать</button>
+
+<div id="videoContainer" class="hidden">
+    <div class="overlay" onclick="closeVideo()"></div>
+    <div class="videoWrapper" onclick="stopPropagation(event)">
+        <button class="closeButton" onclick="closeVideo()">×</button>
+        <video id="videoElement" controls>
+            <source id="videoSource" src="PVO.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+</div>
+
+<embed src="" class="pdfFile hidden" id="pdfFile" type="application/pdf">
+<button class="closeButtonPDF hidden" id="closePdfButton" onclick="closePdf()">×</button>
+
+<script src="allScripts.js"></script>
+</body>
+</html>

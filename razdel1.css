@@ -1,0 +1,220 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Запрещает прокрутку */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-image: url("./razdel1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.back {
+    width: 200px;
+    height: 50px;
+    background-color: #27b030;
+    color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    position: absolute;
+    top: 63%;
+    left: 10%;
+}
+
+.home {
+    width: 200px;
+    height: 50px;
+    background-color: #27b030;
+    color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    position: absolute;
+    top: 73%;
+    left: 10%;
+}
+
+.test{
+    width: 200px;
+    height: 50px;
+    background-color: #27b030;
+    color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    position: absolute;
+    top: 83%;
+    left: 10%;
+}
+
+.b1 {
+    position: absolute;
+    top: 21%;
+    right: 5px;
+    width: 180px;
+    height: 50px;
+    background-color: #27b030;
+    color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.b2 {
+    position: absolute;
+    top: 32%;
+    right: 5px;
+    width: 180px;
+    height: 50px;
+    background-color: #27b030;
+    color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.b3 {
+    position: absolute;
+    top: 53.2%;
+    right: 5px;
+    width: 180px;
+    height: 50px;
+    background-color: #27b030;
+    color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.b4 {
+    position: absolute;
+    top: 61%;
+    right: 5px;
+    width: 180px;
+    height: 50px;
+    background-color: #27b030;
+    color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.b5 {
+    position: absolute;
+    top: 67%;
+    right: 5px;
+    width: 180px;
+    height: 50px;
+    background-color: #27b030;
+    color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.b6 {
+    position: absolute;
+    top: 79%;
+    right: 5px;
+    width: 180px;
+    height: 50px;
+    background-color: #27b030;
+    color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.b1:hover, .b2:hover, .b3:hover, .b4:hover, .b5:hover, .b6:hover, .home:hover, .back:hover {
+    background-color: lightsalmon;
+}
+
+/* Скрытие контейнера */
+.hidden {
+    display: none;
+}
+
+#videoContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Видео обёртка */
+.videoWrapper {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    z-index: 10; /* Видео выше, чем фон */
+}
+
+/* Видео */
+video {
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    left: 525px;
+    top: 120px;
+}
+
+/* Кнопка закрытия */
+.closeButton {
+    position: absolute;
+    top: 120px;
+    right: -525px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #27b030;
+    color: #000;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.closeButton:hover {
+    background-color: #27b000;
+}
+
+/* Фон для клика и закрытия */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+

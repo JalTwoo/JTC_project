@@ -1,0 +1,45 @@
+{
+	"name": "my-video-downloader",
+	"version": "1.0.0",
+	"description": "Приложение для скачивания видео",
+	"main": "main.js",
+	"author": {
+		"name": "JTC",
+		"email": "vasilenkoviacheslav1@gmail.com",
+		"url": "https://your-website.com"
+	},
+	"scripts": {
+		"start": "electron .",
+		"build": "npx nexe main.js"
+	},
+	"build": {
+		"appId": "com.example.myapp",
+		"productName": "My Video Downloader",
+		"directories": {
+			"output": "dist"
+		},
+		"win": {
+			"target": "nsis",
+			"icon": "assets/icons/logo.ico",
+			"sign": false
+		},
+		"mac": {
+			"target": "dmg",
+			"icon": "assets/icons/app-icon.png"
+		},
+		"linux": {
+			"target": "AppImage",
+			"icon": "assets/icons/app-icon.png"
+		}
+	},
+	"devDependencies": {
+		"7zip-bin": "^5.2.0",
+		"electron": "^26.2.0",
+		"electron-builder": "^24.13.3"
+	},
+	"dependencies": {
+		"animejs": "^3.2.2",
+		"nvm": "^0.0.4",
+		"pkg": "^5.8.1"
+	}
+}
